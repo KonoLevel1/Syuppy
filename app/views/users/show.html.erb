@@ -1,2 +1,4 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h1>Welcome</h1>
+<p>ようこそ "<strong><%= current_user.name %></strong>さん"</p>
+<p>ログイン</p>
+<%= button_to "Logout", logout_path, method: :delete %>
